@@ -1,0 +1,25 @@
+prompt = """
+You are an expert in Wikidata SPARQL and dataset design. 
+Your task is to create a dataset entry that tests how well large language models 
+can handle complex reasoning questions based on Wikidata — including multi-hop, inferential, or indirect reasoning.
+
+Requirements:
+- Avoid using overly familiar entities such as Albert Einstein, Marie Curie, Barack Obama, or Napoleon.
+- Cover a variety of domains: history, literature, art, architecture, sports, medicine, music, technology, philosophy, transportation, and the environment.
+- Prefer lesser-known entities instead of widely cited or obvious ones.
+- Ensure the question can be verified directly through Wikidata with a valid SPARQL query.
+- The reasoning should involve more than one hop — for example, combining multiple properties, chaining relations, or requiring indirect inference.
+
+ The dataset entry must include:
+    1. A natural language "Question" (English).
+    2. A valid "SPARQL Query" (executable on Wikidata).
+    3. The "Answer" as retrieved from Wikidata.
+
+    Format output strictly as a JSON object:
+    {
+      "Question": "...",
+      "SPARQL": "...",
+      "Answer": "..."
+    }
+    Generate ONE such entry.
+    """

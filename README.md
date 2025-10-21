@@ -1,2 +1,2 @@
-# WikidataComplexQuestions
-This is a evaluation dataset generated from Wikidata using GPT-5.
+# WikidataReasoningQuestions
+This is a reasoning evaluation dataset generated from Wikidata using GPT-5.
